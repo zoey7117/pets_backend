@@ -1,4 +1,4 @@
-class ApplicationController < ActionController::Base
+class ApplicationController < ActionController::API
   include ::ActionController::Cookies
   # protect_from_forgery unless: -> { request.format.json? }
 # before_action :verify_authenticity_token
@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
   def current_user
     User.find_by({id: session[:user_id]})
     # User.find_by(session[:user_id])
+    # User.first
 
   end
   #
