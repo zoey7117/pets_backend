@@ -22,7 +22,6 @@ User.create(id: 3, name: 'dale', password: '123')
 User.create(id: 4, name: 'ive', password: '123')
 
 
-
 Pet.create(id: 1, name: 'lola', kind: 'cat',age: 13, user_id: 1, color: 'tortoiseshell grey', hair:'short', image:'https://sendeyo.com/up/de3269470dea83881ffb9a611e7cab45.png')
 Pet.create(id: 2, name: 'tookie', kind: 'cat',age: 13, user_id: 1, color: 'tortoiseshell', hair:'short', image:'https://sendeyo.com/up/75c75ff3d04f0b606da7f44e7af220db.png')
 Pet.create(id: 3, name: 'zoey', kind: 'dog', age: 8, user_id: 1, color: 'white', hair:'medium', image:'https://sendeyo.com/up/0cee3baff176e1d87b1fe59258027745.png')
@@ -73,4 +72,6 @@ Pet.create(id: 9, name: 'mufasa', kind: 'cat',age: 2, user_id: 4, color: 'orange
  # Toy.create(name: 'slipper', pet_id: 6, user_id: 3)
  # Toy.create(name: 'string', pet_id: 9, user_id: 4)
  # Toy.create(name: 'tail', pet_id: 9, user_id: 4)
- #
+ # Pet.create(id: 3, name: 'zoey', kind: 'dog', age: 8, user_id: 1, color: 'white', hair:'medium', image:'https://unsplash.com/photos/D1wiHCovGJ0')
+
+ #Pet.create(id: 3, name: 'zoey', kind: 'dog', age: 8, user_id: 1, color: 'white', hair:'medium', image:'https://sendeyo.com/up/0cee3baff176e1d87b1fe59258027745.png')
