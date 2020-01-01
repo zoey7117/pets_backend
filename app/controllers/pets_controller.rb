@@ -37,11 +37,11 @@ class PetsController < ApplicationController
     render json: @pet
   end
 
-  def pet_hungry
-      @pet.toggle(:hungry)
-      @pet.save
-      render json: @pet
-  end
+  # def pet_hungry
+  #     @pet.toggle(:hungry)
+  #     @pet.save
+  #     render json: @pet
+  # end
 
   def create
     @pet = Pet.create(pet_params)
