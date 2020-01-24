@@ -62,6 +62,6 @@ Rails.application.configure do
 
 
 
-  # config.allowed_cors_origins = ['http://localhost:3001']
+  config.allowed_cors_origins = ['http://localhost:3001']
 
 end
