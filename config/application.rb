@@ -39,7 +39,7 @@ module PetsBackend
       config.autoload_paths << Rails.root.join('lib')
       config.middleware.insert_before 0, Rack::Cors do
         allow do
-          origins 'https://pets-backend-api.herokuapp.com', 'http://localhost:3001', 'http://pets-backend-api.herokuapp.com'
+          origins 'https://silly-johnson-856e87.netlify.com', 'http://localhost:3001', 'http://silly-johnson-856e87.netlify.com'
           resource '*', :headers => :any, :methods => [:get, :patch, :put, :delete, :post, :options, :head]
         end
       end
