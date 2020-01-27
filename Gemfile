@@ -24,15 +24,15 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'rb-readline'
 
-gem 'rack-cors'
+gem 'rack-cors', :require => 'rack/cors'
 
-gem 'sidekiq'
+# gem 'sidekiq'
 
 gem 'active_model_serializers', '~> 0.10.0'
 
-gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
-
-gem 'rails-ujs', '~> 0.1.0'
+# gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+#
+# gem 'rails-ujs', '~> 0.1.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
