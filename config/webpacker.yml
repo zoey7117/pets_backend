@@ -71,7 +71,7 @@ development:
     use_local_ip: false
     quiet: false
     headers:
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': 'https://unruffled-babbage-7875d2.netlify.com'
     watch_options:
       ignored: '**/node_modules/**'
 
