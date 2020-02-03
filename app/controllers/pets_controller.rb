@@ -7,29 +7,26 @@ class PetsController < ApplicationController
     @users = User.all
     render json: @pet
   end
-
-  def index
-    if logged_in? && current_user.pets.length > 0
-      @pets = current_user.pets
-      render json: @pets
-    else
-      @pets = Pet.all
-      render json: @pets
-        # render json: {
-        #   error: "You must be logged in to see pets"
-        # }
-    end
-  end
+  #
   # def index
+  #   if logged_in?
+  #     @pets = current_user.pets
+  #   # @pets.length > 0
+  #     render json: @pets
+  #   else
   #     @pets = Pet.all
   #     render json: @pets
+  #       # render json: {
+  #       #   error: "You must be logged in to see pets"
+  #       # }
+  #   end
   # end
+  def index
+      @pets = Pet.all
+      render json: @pets
+  end
 
-    # else
-    #   render json: {
-    #     error: "You must be logged in to see pets"
-    #   }
-    # end
+  
 
 
   def show
