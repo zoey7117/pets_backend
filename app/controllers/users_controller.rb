@@ -11,6 +11,9 @@ class UsersController < ApplicationController
 
   # GET /users/1
   def show
+    # @pets = Pet.all
+    # @pets = current_user.pets
+
     render json: @user
   end
 
