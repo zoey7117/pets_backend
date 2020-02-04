@@ -7,8 +7,8 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    # origins 'https://adopt-a-pet.netlify.com','https://unruffled-babbage-7875d2.netlify.com', 'http://localhost:3001', 'http://localhost:3002', 'http://unruffled-babbage-7875d2.netlify.com', 'http://adopt-a-pet.netlify.com'
-    origins 'http://localhost:3002','http://localhost:3003','http://localhost:3001'
+
+    origins 'https://pets-frontend.netlify.com', 'http://localhost:3002','http://localhost:3003','http://localhost:3001'
 
     resource '*',
       headers: :any,
