@@ -11,7 +11,7 @@ module PetsBackend
 
     config.middleware.insert_before 0, Rack::Cors do
      allow do
-       origins 'https://pets-frontend.netlify.com','http://localhost:3002','http://localhost:3003','http://localhost:3001', 'http://pets-frontend.netlify.com'
+       origins 'https://adopt-a-pet.netlify.com','http://localhost:3002','http://localhost:3003','http://localhost:3001','http://localhost:3001', 'http://adopt-a-pet.netlify.com'
        resource '*', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
      end
    end
