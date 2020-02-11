@@ -24,6 +24,10 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'rb-readline'
 
+
+gem 'jwt'
+
+
 gem 'rack-cors', :require => 'rack/cors'
 
 # gem 'sidekiq'

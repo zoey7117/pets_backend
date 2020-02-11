@@ -71,7 +71,7 @@ development:
     use_local_ip: false
     quiet: false
     headers:
-      'Access-Control-Allow-Origin': 'https://adopt-a-pet.netlify.com'
+      'Access-Control-Allow-Origin': '*'
     watch_options:
       ignored: '**/node_modules/**'
 
