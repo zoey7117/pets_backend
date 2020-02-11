@@ -1,4 +1,4 @@
-class PetsController < ApplicationController
+class Api::V1::PetsController < ApplicationController
   before_action :set_pet, only: [:show, :pet_hungry, :edit, :update, :destroy]
 
 
