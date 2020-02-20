@@ -1,11 +1,5 @@
 class PetSerializer < ActiveModel::Serializer
-  attributes :id, :name, :kind, :age, :user_id, :color, :hair, :hungry, :sitter, :image
+  attributes :id, :name, :kind, :age, :color, :hair, :hungry, :sitter, :image, :to_adopt
 
-  belongs_to :user
-
-
-
-
-
-
+  belongs_to :owner
 end
