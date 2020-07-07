@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+	post "/login", to: "auth#login"
+	get "/auto_login", to: "auth#auto_login"
 			resources :users
 			resources :pets
 
@@ -9,7 +11,4 @@ Rails.application.routes.draw do
 			post "/pets/:id/adopt", to: "pets#adopt"
       post "/users/:id/get_pet", to: "users#get_pet"
 
-			post "/login", to: "auth#login"
-			get "/auto_login", to: "auth#auto_login"
 		end
-	
